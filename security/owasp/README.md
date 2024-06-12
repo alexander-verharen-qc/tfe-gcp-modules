@@ -8,7 +8,7 @@ Below is an example of how to implement the module.
 module "cloudarmor-public-ingress-owasp" {
   # update the source relative to your module declaration
   # define the variable project_id or set the value appropriately
-  source = "./google_security_policy" 
+  source = "../modules/security/owasp" 
   project = var.project_id
   policy_name = "cloudarmor-public-ingress-owasp"
 }
