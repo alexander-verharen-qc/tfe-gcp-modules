@@ -38,7 +38,7 @@ locals {
 }
 
 module "snapshot_policy_daily_us_central1_os_patch_updates" {
-  source             = "../modules/boot-disk-snapshot-policy" # ensure you update the path to your module!
+  source             = "../modules/dr/boot-disk-snapshot-policy" # ensure you update the path to your module!
   policy_name        = "daily-us-central1-os-patch-updates"
   region             = "us-central1"
   start_time         = "18:00"
@@ -64,7 +64,7 @@ locals {
 }
 
 module "snapshot_policy_weekly_us_central1_os_patch_updates" {
-  source             = "../modules/boot-disk-snapshot-policy" # ensure you update the path to your module!
+  source             = "../modules/dr/boot-disk-snapshot-policy" # ensure you update the path to your module!
   policy_name        = "weekly-us-central1-os-patch-updates"
   region             = "us-central1"
   start_time         = "18:00"
